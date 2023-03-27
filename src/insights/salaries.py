@@ -1,15 +1,43 @@
 from typing import Union, List, Dict
 
-from src.insights.jobs import read
+# from src.insights.jobs import read
 
-# from jobs import read
+from jobs import read
 
 file = "data/jobs.csv"
+
 job = {"title": "Data Scientist", "min_salary": "3000", "max_salary": "6000"}
 salary = 5000
-
 # result = matches_salary_range(job, salary)
 # print(result)
+
+jobs = [
+    {
+        "id": "1",
+        "title": "Software Developer",
+        "min_salary": "2500",
+        "max_salary": "5000",
+    },
+    {
+        "id": "2",
+        "title": "Data Analyst",
+        "min_salary": "2000",
+        "max_salary": "4000",
+    },
+    {
+        "id": "3",
+        "title": "Project Manager",
+        "min_salary": "4000",
+        "max_salary": "7000",
+    },
+    {
+        "id": "5",
+        "title": "UX Designer",
+        "min_salary": "3000",
+        "max_salary": "5500",
+    },
+]
+# filtered_jobs = filter_by_salary_range(jobs, 2500)
 
 
 def get_max_salary(path: str) -> int:
@@ -48,18 +76,11 @@ def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
 def filter_by_salary_range(
     jobs: List[dict], salary: Union[str, int]
 ) -> List[Dict]:
-    """Filters a list of jobs by salary range
-
-    Parameters
-    ----------
-    jobs : list
-        The jobs to be filtered
-    salary : int
-        The salary to be used as filter
-
-    Returns
-    -------
-    list
-        Jobs whose salary range contains `salary`
-    """
-    raise NotImplementedError
+    filtered_jobs = []
+    for job in jobs:
+        try:
+            if matches_salary_range(job, salary):
+                filtered_jobs.append(job)
+        except ValueError:
+            pass
+    return filtered_jobs
