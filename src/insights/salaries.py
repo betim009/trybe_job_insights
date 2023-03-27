@@ -1,8 +1,8 @@
 from typing import Union, List, Dict
 
-# from src.insights.jobs import read
+from src.insights.jobs import read
 
-from jobs import read
+# from jobs import read
 
 file = "data/jobs.csv"
 
