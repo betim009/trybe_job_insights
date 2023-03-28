@@ -1,4 +1,4 @@
-# :construction: Trybe job insights:
+# 🚀: Trybe job insights:
 
 <details>
   <summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
@@ -23,5 +23,24 @@
   </ul>
 </details>
 
-<details>
+# Orientações:
+1. Clone o Repositório: 
+`git clone git@github.com:betim009/trybe_job_insights.git`
 
+2. Crie o ambiente virtual para o projeto
+`python3 -m venv .venv && source .venv/bin/activate`
+
+3. Instale as dependências
+`python3 -m pip install -r dev-requirements.txt`
+
+4. Abra um terminal Python importando estas funções através do comando python3
+`-i src/insights/jobs.py` e invoque a função utilizando diferentes _paths_.
+
+5. Executar tests:
+`python3 -m pytest tests/counter/test_counter.py`
+
+
+  
+  
+  
+  
