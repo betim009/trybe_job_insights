@@ -33,8 +33,8 @@
 3. Instale as dependências
 `python3 -m pip install -r dev-requirements.txt`
 
-4. Abra um terminal Python importando estas funções através do comando python3
-`-i src/insights/jobs.py` e invoque a função utilizando diferentes _paths_.
+4. Abra um terminal Python importando estas funções através do comando:
+`python3 -i src/insights/jobs.py` e invoque a função utilizando diferentes _paths_.
 
 5. Executar tests:
 `python3 -m pytest tests/counter/test_counter.py`
