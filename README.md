@@ -39,6 +39,11 @@
 5. Executar tests:
 `python3 -m pytest tests/counter/test_counter.py`
 
+6. Acesse a aplicação: 
+`flask run`
+* http://localhost:5000/jobs
+* ![image](https://user-images.githubusercontent.com/62117863/229303527-04942213-fe12-480f-b044-723ae4a2828e.png)
+
 
   
   
